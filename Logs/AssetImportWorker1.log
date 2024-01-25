@@ -15,7 +15,7 @@ C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53996
+54381
 Successfully changed project path to: C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16356] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 747776936 [EditorId] 747776936 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18392] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 336314410 [EditorId] 336314410 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [16356] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 747776936 [EditorId] 747776936 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18392] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 336314410 [EditorId] 336314410 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 38.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.062598 seconds.
+Registered in 0.060581 seconds.
 - Loaded All Assemblies, in  1.707 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.131 seconds
-Domain Reload Profiling: 2828ms
-	BeginReloadAssembly (510ms)
+- Finished resetting the current domain, in  1.100 seconds
+Domain Reload Profiling: 2796ms
+	BeginReloadAssembly (493ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (165ms)
-	RebuildNativeTypeToScriptingClass (52ms)
-	initialDomainReloadingComplete (308ms)
-	LoadAllAssembliesAndSetupDomain (660ms)
-		LoadAssemblies (499ms)
+	RebuildCommonClasses (169ms)
+	RebuildNativeTypeToScriptingClass (51ms)
+	initialDomainReloadingComplete (313ms)
+	LoadAllAssembliesAndSetupDomain (668ms)
+		LoadAssemblies (485ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (652ms)
-			TypeCache.Refresh (647ms)
-				TypeCache.ScanAssembly (589ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1133ms)
+		AnalyzeDomain (658ms)
+			TypeCache.Refresh (654ms)
+				TypeCache.ScanAssembly (598ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1102ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (858ms)
+		SetupLoadedEditorAssemblies (848ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (52ms)
-			SetLoadedEditorAssemblies (20ms)
+			InitializePlatformSupportModulesInManaged (53ms)
+			SetLoadedEditorAssemblies (22ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (11ms)
-			ProcessInitializeOnLoadAttributes (564ms)
-			ProcessInitializeOnLoadMethodAttributes (211ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (557ms)
+			ProcessInitializeOnLoadMethodAttributes (207ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 2828ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.070 seconds
-Refreshing native plugins compatible for Editor in 16.12 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.656 seconds
+Refreshing native plugins compatible for Editor in 13.98 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.693 seconds
-Domain Reload Profiling: 5752ms
-	BeginReloadAssembly (651ms)
+- Finished resetting the current domain, in  2.103 seconds
+Domain Reload Profiling: 4740ms
+	BeginReloadAssembly (554ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (23ms)
+		DisableScriptedObjects (20ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (80ms)
-	RebuildCommonClasses (160ms)
-	RebuildNativeTypeToScriptingClass (51ms)
-	initialDomainReloadingComplete (198ms)
-	LoadAllAssembliesAndSetupDomain (1996ms)
-		LoadAssemblies (1570ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (143ms)
+	RebuildNativeTypeToScriptingClass (46ms)
+	initialDomainReloadingComplete (200ms)
+	LoadAllAssembliesAndSetupDomain (1694ms)
+		LoadAssemblies (1235ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (819ms)
-			TypeCache.Refresh (731ms)
-				TypeCache.ScanAssembly (672ms)
-			ScanForSourceGeneratedMonoScriptInfo (65ms)
+		AnalyzeDomain (810ms)
+			TypeCache.Refresh (729ms)
+				TypeCache.ScanAssembly (671ms)
+			ScanForSourceGeneratedMonoScriptInfo (59ms)
 			ResolveRequiredComponents (18ms)
-	FinalizeReload (2696ms)
+	FinalizeReload (2104ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1981ms)
+		SetupLoadedEditorAssemblies (1482ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (19ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (301ms)
-			ProcessInitializeOnLoadAttributes (1467ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (43ms)
+			BeforeProcessingInitializeOnLoad (261ms)
+			ProcessInitializeOnLoadAttributes (1070ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (40ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 16.64 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (26ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 12.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3531.
-Memory consumption went from 113.7 MB to 113.7 MB.
-Total: 12.034900 ms (FindLiveObjects: 0.789700 ms CreateObjectMapping: 0.571800 ms MarkObjects: 10.208500 ms  DeleteObjects: 0.461000 ms)
+Memory consumption went from 113.7 MB to 113.6 MB.
+Total: 10.518400 ms (FindLiveObjects: 0.539000 ms CreateObjectMapping: 0.473200 ms MarkObjects: 9.338500 ms  DeleteObjects: 0.163200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,9 +183,113 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 916854.356156 seconds.
-  path: Assets/Models/Remy.fbx
-  artifactKey: Guid(9769783342873134ca131a0efb37aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Remy.fbx using Guid(9769783342873134ca131a0efb37aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040cf0be36fc9caedbb7faddaa105556') in 3.147545 seconds
+  Time since last request: 918768.174377 seconds.
+  path: Assets/Models/Ch02_nonPBR.fbx
+  artifactKey: Guid(19e27621122f8a342aab68ef9186661f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch02_nonPBR.fbx using Guid(19e27621122f8a342aab68ef9186661f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af821fb42f2db8a13c46660a49cbc9d') in 0.718933 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 173
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 191.059203 seconds.
+  path: Assets/Animators/Throw.fbx
+  artifactKey: Guid(683f034593dd37e4d896bf686b9ed283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Throw.fbx using Guid(683f034593dd37e4d896bf686b9ed283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc9cbc58486810d20ccb2f89f5914f2') in 0.018604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 15.258626 seconds.
+  path: Assets/Animators/Locomotion Pack/idle.fbx
+  artifactKey: Guid(0db71f3ee4bf49b42b0fc528b1574eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/idle.fbx using Guid(0db71f3ee4bf49b42b0fc528b1574eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e057c8920c30121b70c2e97d4cf94c95') in 0.029734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Animators/Locomotion Pack/jump.fbx
+  artifactKey: Guid(99146e0203e5a7a449b4819efe901d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/jump.fbx using Guid(99146e0203e5a7a449b4819efe901d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c99df88412327159a064c5b9439f3b') in 0.017658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Animators/Locomotion Pack/left strafe walking.fbx
+  artifactKey: Guid(c45fcae79dfcd2941959e5dd08ac2eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/left strafe walking.fbx using Guid(c45fcae79dfcd2941959e5dd08ac2eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3471528edde7b6385ce25676e9df3b') in 0.016398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Animators/Locomotion Pack/right strafe.fbx
+  artifactKey: Guid(dd469a76862407f4a966fb649aafba53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/right strafe.fbx using Guid(dd469a76862407f4a966fb649aafba53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00cbf347f49d74c38290a5be4b15e49') in 0.019610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Animators/Locomotion Pack/left strafe.fbx
+  artifactKey: Guid(033ada2dc6e78514291cbd8e12538f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/left strafe.fbx using Guid(033ada2dc6e78514291cbd8e12538f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365396b62b4ec954399080163fbf96a3') in 0.015389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Animators/Locomotion Pack/right turn 90.fbx
+  artifactKey: Guid(2ac8ccad18c4e3b4e9ba9977183a4c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/right turn 90.fbx using Guid(2ac8ccad18c4e3b4e9ba9977183a4c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f408507c30ad1376102f081b6d0824e') in 0.020101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Animators/Locomotion Pack/running.fbx
+  artifactKey: Guid(3d8a1464df8a0cd4db26b12f74e8c88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/running.fbx using Guid(3d8a1464df8a0cd4db26b12f74e8c88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798b932498bd7fd8d4c363afb1083f75') in 0.016882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Animators/Locomotion Pack/walking.fbx
+  artifactKey: Guid(cf78693817921bd44896b663b340b449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/walking.fbx using Guid(cf78693817921bd44896b663b340b449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e66fe929b893b08f1a6ee2f2c1a7ba') in 0.020305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Animators/Locomotion Pack/right turn.fbx
+  artifactKey: Guid(a6fa326f452155e4c9fc626a6afcea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/right turn.fbx using Guid(a6fa326f452155e4c9fc626a6afcea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a7457d9a7996041a2b2fdec626645c') in 0.018017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Animators/Locomotion Pack/left turn 90.fbx
+  artifactKey: Guid(2163eb175d0da564d99bded7e9248c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/left turn 90.fbx using Guid(2163eb175d0da564d99bded7e9248c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f599af9476d9b68e8ee94af0f5461ad3') in 0.013979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Animators/Locomotion Pack/right strafe walking.fbx
+  artifactKey: Guid(9e8dde112965511428bb2b535bacfc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/right strafe walking.fbx using Guid(9e8dde112965511428bb2b535bacfc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e9909e97df6dcbdb542d46cc3f2f74') in 0.018191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Animators/Locomotion Pack/left turn.fbx
+  artifactKey: Guid(f9aee89985598fe45907c28120a5b04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/left turn.fbx using Guid(f9aee89985598fe45907c28120a5b04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0015a4ad0c6dac6481f77b5a84930ff') in 0.016206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
