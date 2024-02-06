@@ -15,7 +15,7 @@ C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53996
+54381
 Successfully changed project path to: C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/admin/Documents/itsc_5231/LastOnePickedforDodgeball
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17556] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 2777149690 [EditorId] 2777149690 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10720] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 3583439013 [EditorId] 3583439013 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17556] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 2777149690 [EditorId] 2777149690 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10720] Host "[IP] 10.97.192.135 [Port] 0 [Flags] 2 [Guid] 3583439013 [EditorId] 3583439013 [Version] 1048832 [Id] WindowsEditor(7,5W67XT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 40.85 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -70,55 +70,55 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.060588 seconds.
-- Loaded All Assemblies, in  1.710 seconds
+Registered in 0.061493 seconds.
+- Loaded All Assemblies, in  1.706 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.128 seconds
-Domain Reload Profiling: 2830ms
+- Finished resetting the current domain, in  1.107 seconds
+Domain Reload Profiling: 2802ms
 	BeginReloadAssembly (507ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
+		CreateAndSetChildDomain (4ms)
 	RebuildCommonClasses (166ms)
-	RebuildNativeTypeToScriptingClass (53ms)
-	initialDomainReloadingComplete (304ms)
-	LoadAllAssembliesAndSetupDomain (669ms)
-		LoadAssemblies (498ms)
+	RebuildNativeTypeToScriptingClass (49ms)
+	initialDomainReloadingComplete (309ms)
+	LoadAllAssembliesAndSetupDomain (661ms)
+		LoadAssemblies (496ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (660ms)
-			TypeCache.Refresh (654ms)
-				TypeCache.ScanAssembly (600ms)
+		AnalyzeDomain (653ms)
+			TypeCache.Refresh (648ms)
+				TypeCache.ScanAssembly (591ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (1131ms)
+	FinalizeReload (1109ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (862ms)
+		SetupLoadedEditorAssemblies (855ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (51ms)
-			SetLoadedEditorAssemblies (21ms)
+			SetLoadedEditorAssemblies (24ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (10ms)
-			ProcessInitializeOnLoadAttributes (569ms)
-			ProcessInitializeOnLoadMethodAttributes (210ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (563ms)
+			ProcessInitializeOnLoadMethodAttributes (205ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.101 seconds
-Refreshing native plugins compatible for Editor in 17.25 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.667 seconds
+Refreshing native plugins compatible for Editor in 13.58 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.714 seconds
-Domain Reload Profiling: 5801ms
-	BeginReloadAssembly (669ms)
+- Finished resetting the current domain, in  2.096 seconds
+Domain Reload Profiling: 4747ms
+	BeginReloadAssembly (547ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (31ms)
+		DisableScriptedObjects (20ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (158ms)
-	RebuildNativeTypeToScriptingClass (51ms)
-	initialDomainReloadingComplete (200ms)
-	LoadAllAssembliesAndSetupDomain (2007ms)
-		LoadAssemblies (1595ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (140ms)
+	RebuildNativeTypeToScriptingClass (49ms)
+	initialDomainReloadingComplete (201ms)
+	LoadAllAssembliesAndSetupDomain (1712ms)
+		LoadAssemblies (1247ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (823ms)
-			TypeCache.Refresh (733ms)
-				TypeCache.ScanAssembly (673ms)
-			ScanForSourceGeneratedMonoScriptInfo (66ms)
+		AnalyzeDomain (815ms)
+			TypeCache.Refresh (734ms)
+				TypeCache.ScanAssembly (677ms)
+			ScanForSourceGeneratedMonoScriptInfo (57ms)
 			ResolveRequiredComponents (19ms)
-	FinalizeReload (2717ms)
+	FinalizeReload (2098ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2007ms)
+		SetupLoadedEditorAssemblies (1496ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (43ms)
-			SetLoadedEditorAssemblies (25ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (306ms)
-			ProcessInitializeOnLoadAttributes (1487ms)
-			ProcessInitializeOnLoadMethodAttributes (100ms)
-			AfterProcessingInitializeOnLoad (45ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (278ms)
+			ProcessInitializeOnLoadAttributes (1064ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (39ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 15.52 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (25ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 13.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3531.
 Memory consumption went from 113.7 MB to 113.7 MB.
-Total: 13.750700 ms (FindLiveObjects: 0.551000 ms CreateObjectMapping: 0.786500 ms MarkObjects: 12.141300 ms  DeleteObjects: 0.269900 ms)
+Total: 10.336000 ms (FindLiveObjects: 0.442700 ms CreateObjectMapping: 0.447200 ms MarkObjects: 9.215600 ms  DeleteObjects: 0.228500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,3 +181,83 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 918768.183077 seconds.
+  path: Assets/Models/Ch38_nonPBR.fbx
+  artifactKey: Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch38_nonPBR.fbx using Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bdb97e88b20f8fe2032bbb28e32732') in 0.774895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 19.959142 seconds.
+  path: Assets/Animators
+  artifactKey: Guid(7304abd2f9cfa8c449b140ee6245853c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators using Guid(7304abd2f9cfa8c449b140ee6245853c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf0a69d1dd65b68ae8ffdc719d0db05') in 0.002328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 171.027245 seconds.
+  path: Assets/Animators/Goalkeeper Catch.fbx
+  artifactKey: Guid(94e04e3a4363bc745946c5dbb45e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Goalkeeper Catch.fbx using Guid(94e04e3a4363bc745946c5dbb45e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3267c2f8c5cbdc9aa1c406e5c3cc6d83') in 0.019833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 12.411587 seconds.
+  path: Assets/Animators/Catch.fbx
+  artifactKey: Guid(94e04e3a4363bc745946c5dbb45e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Catch.fbx using Guid(94e04e3a4363bc745946c5dbb45e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0c1a729a87bd7c1a158200d88017c2') in 0.011617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 2.723881 seconds.
+  path: Assets/Animators/Locomotion Pack
+  artifactKey: Guid(d4dcfcc14f67b154e8950d710db31dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack using Guid(d4dcfcc14f67b154e8950d710db31dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776f0a88203f9056fecc934f8948eccf') in 0.000942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.105111 seconds.
+  path: Assets/Animators/Locomotion Pack/Ch02_nonPBR.fbx
+  artifactKey: Guid(6c5459278b7a31045a68ad4308191bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Locomotion Pack/Ch02_nonPBR.fbx using Guid(6c5459278b7a31045a68ad4308191bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8e24286f4d92de6c1b3b75f4a15d06') in 0.308717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 22.105646 seconds.
+  path: Assets/Models/Ricky.fbx
+  artifactKey: Guid(9769783342873134ca131a0efb37aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ricky.fbx using Guid(9769783342873134ca131a0efb37aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5600ccd0fb8baede3dc271c0fdfcf2fe') in 0.340347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 173
+========================================================================
+Received Import Request.
+  Time since last request: 56.636515 seconds.
+  path: Assets/Models/Opponent.fbx
+  artifactKey: Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Opponent.fbx using Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcec9eb855f6c96d32fc81b22e01efa') in 0.338392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 10.783623 seconds.
+  path: Assets/Models/Opponent_1.fbx
+  artifactKey: Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Opponent_1.fbx using Guid(1dd20d1af3edc2149ab94a0e97d4c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb089a50d0fb64b61709a341bc22aa69') in 0.292244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 7.880276 seconds.
+  path: Assets/Models/Opponent_2.fbx
+  artifactKey: Guid(19e27621122f8a342aab68ef9186661f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Opponent_2.fbx using Guid(19e27621122f8a342aab68ef9186661f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddb6d2f7bf6c5ad5ef021f155202c03') in 0.248396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
