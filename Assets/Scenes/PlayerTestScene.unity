@@ -499,6 +499,9 @@ PrefabInstance:
       addedObject: {fileID: 1628923078}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9769783342873134ca131a0efb37aa35, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1628923084}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9769783342873134ca131a0efb37aa35, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1628923080}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9769783342873134ca131a0efb37aa35, type: 3}
       insertIndex: -1
@@ -571,11 +574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b66b7546aa5e84693bad75f61a1bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRigidbody: {fileID: 1628923079}
-  movementForce: 1
-  jumpForce: 5
-  maxSpeed: 5
   mainCamera: {fileID: 1153169295}
+  playerRigidbody: {fileID: 1628923079}
+  walkSpeed: 2.5
+  sprintSpeed: 5
+  maxWalkSpeed: 2.5
+  maxSprintSpeed: 5
 --- !u!95 &1628923081 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9769783342873134ca131a0efb37aa35, type: 3}
@@ -596,6 +600,36 @@ MonoBehaviour:
   animator: {fileID: 1628923081}
   playerRigidbody: {fileID: 1628923079}
   maxSpeed: 5
+--- !u!114 &1628923084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628923076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 8a4401dc3c8bcd34fb67ea8713d86950, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Dodgeball
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

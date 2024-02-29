@@ -5,88 +5,125 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    // input fields
-    private ThirdPersonActionsAsset playerActionsAsset;
-    private InputAction move;
+   #region : Fields
+    [SerializeField] Camera mainCamera;
 
-    // movement fields
+    // Player action asset
+    private PlayerInput playerInputActionAsset;
+    private InputAction movement;
+
+    // Player assets
     [SerializeField] private Rigidbody playerRigidbody;
-    [SerializeField] private float movementForce = 1f;
-    [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private float maxSpeed = 5f;
+
+
+    // Movement fields
+    [SerializeField] private float walkSpeed = 2.5f;
+    [SerializeField] private float sprintSpeed = 5f;
+    [SerializeField] private float maxWalkSpeed = 2.5f;
+    [SerializeField] private float maxSprintSpeed = 5f;
+    private float maxSpeed = 5f;
+    private float movementForce;
     private Vector3 forceDirection = Vector3.zero;
+    private bool isSprinting = false;
+    private bool isMoving = false;
+    #endregion
 
-    [SerializeField] private Camera mainCamera;
-
-
-    // Initialize fields before application starts so that ThirdPersonActionsAsset can be intialized
+    #region Enabling/Disabling player controls
     private void Awake() {
-        playerActionsAsset = new ThirdPersonActionsAsset();
-        move = playerActionsAsset.Player.Move;
+        playerInputActionAsset = new PlayerInput();
     }
 
-    #region Character Movement
-    // Move character based on input
+    private void OnEnable() {
+        movement = playerInputActionAsset.Dodgeball.MovementPressed;
+        playerInputActionAsset.Dodgeball.Enable();  
+    }
+
+    private void OnDisable() {
+        playerInputActionAsset.Dodgeball.Disable();  
+    }
+    #endregion
+
     private void FixedUpdate() {
-        // Get movement direction (relative to the camera)
-        forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(mainCamera) * movementForce;
-        forceDirection += move.ReadValue<Vector2>().y * GetCameraForward(mainCamera) * movementForce;
+        // sprinting value
+        if(isSprinting && isMoving) {
+            movementForce = sprintSpeed;
+            maxSpeed = maxSprintSpeed;
+        }
+        // walking value
+        else if(isMoving) {
+            movementForce = walkSpeed;
+            maxSpeed = maxWalkSpeed;
+        }
+        else {
+            movementForce = 0f;
+        }
+
+        // Debug.Log(movementForce);
+        forceDirection += movement.ReadValue<Vector2>().x * GetCameraRight(mainCamera) * movementForce;
+        forceDirection += movement.ReadValue<Vector2>().y * GetCameraForward(mainCamera) * movementForce;
 
         // Make character move
         playerRigidbody.AddForce(forceDirection, ForceMode.Impulse);
         // When no control input occuring it will stop moving the character
         forceDirection = Vector3.zero;
 
-        // Make sure player does not exceed max speed
+        // Set limit to horizontal speed
         Vector3 horizontalVelocity = playerRigidbody.velocity;
-        horizontalVelocity.y = 0; // Only checking x velocity (not y)
+        horizontalVelocity.y = 0;
         if(horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed) {
-            // set velocity to max velocity if too fast
             playerRigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * playerRigidbody.velocity.y;
         }
 
-        // Rotate player to look in direction of movement
-        PlayerRotation();
+        LookAt();
     }
 
-    private void OnEnable() {
-        playerActionsAsset.Player.Enable();
-    }
+    #region Rotation/Movement relative to camera
 
-    private void OnDisable() {
-        playerActionsAsset.Player.Disable();
-    }
+
     /* Gets the projection of forward and right relative to camera 
         so player can use calculations to move on the horizontal plane
         TDLR: get the right and forward position of camera without
         tilt/angle offset  */
+
     private Vector3 GetCameraRight(Camera mainCamera) {
         Vector3 right = mainCamera.transform.right;
         right.y = 0;
         return right.normalized; 
     }
-
     private Vector3 GetCameraForward(Camera mainCamera) {
         Vector3 forward = mainCamera.transform.forward;
         forward.y = 0;
         return forward.normalized;
     }
-    #endregion
-
-    // Look at the direction player is moving
-    private void PlayerRotation() {
+  
+    private void LookAt() {
         Vector3 direction = playerRigidbody.velocity;
-
-        // Don't have player look up or down
         direction.y = 0f;
 
-        // Check if player is recieving input and we are moving then change look direction
-        if(move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f) {
-            // TODO: Change to Slerp
-            playerRigidbody.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        // Movement input from player and we are moving
+        if(movement.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f) {
+            this.playerRigidbody.rotation = Quaternion.LookRotation(direction, Vector3.up);
         } else {
-            // stop rotating
             playerRigidbody.angularVelocity = Vector3.zero;
         }
     }
+    #endregion
+
+    #region : Activate/deactivate movement values
+    private void OnSprintPressed() {
+        isSprinting = true;
+    }
+
+    private void OnSprintReleased() {
+        isSprinting = false;
+    }
+
+    private void OnMovementPressed() {
+        isMoving = true;
+    }
+
+    private void OnMovementReleased() {
+        isMoving = false;
+    }
+    #endregion
 }
