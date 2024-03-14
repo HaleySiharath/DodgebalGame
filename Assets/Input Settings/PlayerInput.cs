@@ -25,12 +25,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     ""maps"": [
         {
             ""name"": ""Dodgeball"",
-            ""id"": ""e4d956ea-ee01-4ae5-934d-dd67247662a7"",
+            ""id"": ""ace7a1d1-551f-48cb-8c73-098a4a96a993"",
             ""actions"": [
                 {
                     ""name"": ""MovementPressed"",
                     ""type"": ""Value"",
-                    ""id"": ""fcc41af7-b10f-4418-b1d8-40eda43446b1"",
+                    ""id"": ""d626a57b-9f9d-4f1c-9b68-b8f31ee2564e"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -39,7 +39,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""MovementReleased"",
                     ""type"": ""Value"",
-                    ""id"": ""335d692d-4823-41a9-8fd4-5fde2729d92a"",
+                    ""id"": ""08bacba5-8fad-4f7d-b9cb-15f583f70f0a"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -48,7 +48,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""SprintPressed"",
                     ""type"": ""Button"",
-                    ""id"": ""badb5f78-7d57-4779-8bc8-a6db3d0d8349"",
+                    ""id"": ""0baabcdf-f27f-4ef0-9962-94d271603095"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -57,7 +57,16 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""SprintReleased"",
                     ""type"": ""Button"",
-                    ""id"": ""9322be34-31af-43e1-9218-e20245127b23"",
+                    ""id"": ""01b754ae-8782-4efa-9f61-0302a833ea3f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Throw"",
+                    ""type"": ""Button"",
+                    ""id"": ""38a5b1cc-d2c2-477c-a902-6d2328414eb1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -67,9 +76,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""6da5794e-aaad-4ef0-91a6-462381fcec13"",
+                    ""id"": ""2ecfb408-7075-4072-9d6a-8ab0ffe8f5a1"",
                     ""path"": ""2DVector"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MovementPressed"",
@@ -78,7 +87,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""1afb6385-3f77-42a1-9af7-261b5e76735c"",
+                    ""id"": ""e07b4f9a-7ee6-4d45-849c-82728f36922a"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -89,7 +98,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""5cd17b93-7222-4b7a-ade0-67714fa7dcd2"",
+                    ""id"": ""f884a39c-237b-4c05-bd85-70abd5e4b5dc"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -100,7 +109,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""cc8ca444-5990-49c1-8457-e5e9bbfe7852"",
+                    ""id"": ""2a992b44-3869-40e2-8076-4dfed2159c23"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -111,7 +120,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""69f34bae-be68-41d0-9948-79789104c8d9"",
+                    ""id"": ""e3601260-ea84-467f-840f-3fb266fe8eb2"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -122,7 +131,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""ee3a5a88-dc6e-4461-82a6-a8d61ec1d2e5"",
+                    ""id"": ""2b678f3e-8f59-43f0-bb6c-7ed56c74ef16"",
                     ""path"": ""2DVector"",
                     ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
@@ -133,7 +142,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""dea4712a-2998-4dd7-b2e3-a7b12e8b8f4c"",
+                    ""id"": ""18b65af3-6d32-41a8-b0e8-32044dbbebf6"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -144,7 +153,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""1f8f8b51-ef79-4352-9bba-455a45ce811d"",
+                    ""id"": ""d17c49f8-ed68-4b39-a638-6dda060df470"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -155,7 +164,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""dd535729-bdf2-4a08-a8b3-93b6ecbfc7f5"",
+                    ""id"": ""aa637441-e2f5-429d-b2de-6c91a73abff9"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -166,7 +175,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""ce1e3781-bd9c-450c-a774-0db3c54284df"",
+                    ""id"": ""f13e11b7-0f54-454d-9145-2184a9683f5d"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -177,7 +186,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f63c68c6-f1b2-4cb8-bfe2-fd802fc4e56b"",
+                    ""id"": ""169e21ef-665c-489c-9af7-acb0707827fb"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
@@ -188,12 +197,23 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1d76649d-6853-4eb0-8770-1043d99b975d"",
+                    ""id"": ""132e0953-765e-4cde-a666-9a1564b2afea"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""SprintReleased"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a157bcb5-7f4b-4a5f-9321-7a538237b95a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -208,6 +228,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Dodgeball_MovementReleased = m_Dodgeball.FindAction("MovementReleased", throwIfNotFound: true);
         m_Dodgeball_SprintPressed = m_Dodgeball.FindAction("SprintPressed", throwIfNotFound: true);
         m_Dodgeball_SprintReleased = m_Dodgeball.FindAction("SprintReleased", throwIfNotFound: true);
+        m_Dodgeball_Throw = m_Dodgeball.FindAction("Throw", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,6 +294,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Dodgeball_MovementReleased;
     private readonly InputAction m_Dodgeball_SprintPressed;
     private readonly InputAction m_Dodgeball_SprintReleased;
+    private readonly InputAction m_Dodgeball_Throw;
     public struct DodgeballActions
     {
         private @PlayerInput m_Wrapper;
@@ -281,6 +303,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @MovementReleased => m_Wrapper.m_Dodgeball_MovementReleased;
         public InputAction @SprintPressed => m_Wrapper.m_Dodgeball_SprintPressed;
         public InputAction @SprintReleased => m_Wrapper.m_Dodgeball_SprintReleased;
+        public InputAction @Throw => m_Wrapper.m_Dodgeball_Throw;
         public InputActionMap Get() { return m_Wrapper.m_Dodgeball; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -302,6 +325,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @SprintReleased.started += instance.OnSprintReleased;
             @SprintReleased.performed += instance.OnSprintReleased;
             @SprintReleased.canceled += instance.OnSprintReleased;
+            @Throw.started += instance.OnThrow;
+            @Throw.performed += instance.OnThrow;
+            @Throw.canceled += instance.OnThrow;
         }
 
         private void UnregisterCallbacks(IDodgeballActions instance)
@@ -318,6 +344,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @SprintReleased.started -= instance.OnSprintReleased;
             @SprintReleased.performed -= instance.OnSprintReleased;
             @SprintReleased.canceled -= instance.OnSprintReleased;
+            @Throw.started -= instance.OnThrow;
+            @Throw.performed -= instance.OnThrow;
+            @Throw.canceled -= instance.OnThrow;
         }
 
         public void RemoveCallbacks(IDodgeballActions instance)
@@ -341,5 +370,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnMovementReleased(InputAction.CallbackContext context);
         void OnSprintPressed(InputAction.CallbackContext context);
         void OnSprintReleased(InputAction.CallbackContext context);
+        void OnThrow(InputAction.CallbackContext context);
     }
 }

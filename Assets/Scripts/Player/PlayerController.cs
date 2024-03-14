@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     // Player action asset
     private PlayerInput playerInputActionAsset;
     private InputAction movement;
+    [SerializeField] Animator animator;
 
     // Player assets
     [SerializeField] private Rigidbody playerRigidbody;
@@ -126,4 +127,9 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
     #endregion
+
+
+    private void OnThrow() {
+        animator.SetTrigger("throw");
+    }
 }
