@@ -1,6 +1,7 @@
 # Excluded folders
 /.vs/
 /Temp
+/UserSettings
 
 [Bb]in/
 [Bb]uild/
