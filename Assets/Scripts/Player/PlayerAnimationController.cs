@@ -12,7 +12,7 @@ public class ThirdPersonAnimation : MonoBehaviour
     // Change animation based on the players speed
     void Update()
     {
-        Debug.Log(playerRigidbody.velocity.magnitude);
+        //Debug.Log(playerRigidbody.velocity.magnitude);
         animator.SetFloat("speed", playerRigidbody.velocity.magnitude / maxSpeed);
     }
 }
