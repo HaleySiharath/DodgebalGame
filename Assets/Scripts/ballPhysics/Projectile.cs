@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
         //gravity = rb.AddComponent<ConstantForce>();
         //gravity.force = new Vector3(0f, -9.81f, 0.0f);
         
-        rb.AddForce(Vector3.forward * speed, ForceMode.Impulse);
+        rb.AddForce(transform.forward * speed, ForceMode.Impulse);
     }
 
     // Update is called once per frame
