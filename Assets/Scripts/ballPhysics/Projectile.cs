@@ -21,9 +21,6 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //gravity = rb.AddComponent<ConstantForce>();
-        //gravity.force = new Vector3(0f, -9.81f, 0.0f);
-        
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
     }
 

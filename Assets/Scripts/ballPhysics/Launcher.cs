@@ -8,7 +8,6 @@ public class Launcher : MonoBehaviour
     public Transform barrelOut; //Dodgeball Spawnpoint
     public GameObject projectile; //Instantiated dodgeball
 
-
     // Update is called once per frame
     void Update()
     {
