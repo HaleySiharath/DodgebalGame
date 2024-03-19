@@ -11,6 +11,8 @@ public class Projectile : MonoBehaviour
     Rigidbody rb; //Variable to store Rigidbody component
     Vector3 lastVelocity; // For obtaining the last calculated velocity in Update()
 
+    public bool thrownByPlayer = false;
+
     //[SerializeField] private AudioSource source;
     [SerializeField] private AudioClip clip;
 
@@ -37,14 +39,14 @@ public class Projectile : MonoBehaviour
 
         //source.PlayOneShot(clip);
         
-        
         var speed = lastVelocity.magnitude; //The speed of the ball right before impact
 
-        
+            
         var direction = Vector3.Reflect(lastVelocity.normalized, coll.contacts[0].normal);
 
         rb.velocity = direction * Mathf.Max(speed / 1.05f, 0f); //Set the new velocity of the ball
         
+        
     }
-    
+
 }

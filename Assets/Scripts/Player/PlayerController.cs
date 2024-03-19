@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private PlayerInput playerInputActionAsset;
     private InputAction movement;
     [SerializeField] Animator animator;
+    [SerializeField] Launcher launchScript;
 
     // Player assets
     [SerializeField] private Rigidbody playerRigidbody;
@@ -131,5 +132,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnThrow() {
         animator.SetTrigger("throw");
+       StartCoroutine(launchScript.Shoot());
     }
 }
