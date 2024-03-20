@@ -15,9 +15,11 @@ public class EnemyLaunchPoint : MonoBehaviour
 
         if(enemyLauncherObj.isShooting) { //This code will be changed later for variation, right now it will only target player
             if (aimRng == 0) {
-                transform.LookAt(target);
+                transform.LookAt(target, Vector3.up);
+                //Debug.Log("first if");
             } else {
                 transform.Rotate((int) Random.Range(-15f, 15f), (int) Random.Range(-270f, -90f), 0f, Space.Self);
+                //Debug.Log("second if");
             }
 
         }

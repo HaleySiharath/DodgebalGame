@@ -147,4 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  destroyTime: 2
+  thrownByPlayer: 0
   clip: {fileID: 0}

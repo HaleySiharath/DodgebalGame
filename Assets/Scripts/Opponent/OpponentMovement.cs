@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class OpponentMovement : MonoBehaviour
 {
-    [SerializeField] private Transform trans;
+        [SerializeField] private Transform trans;
     [SerializeField] private Transform playerTransform;
 	[SerializeField] private Rigidbody rb;
 	[SerializeField] private Transform target;
 	[SerializeField] private OpponentTargetMovement targetLocation;
     [SerializeField] private Animator animator;
+    [SerializeField] EnemyLauncher launchScript;
 
 
 	private float maxSpeed;
@@ -19,7 +20,7 @@ public class OpponentMovement : MonoBehaviour
     private float stop = 0;
 
 	void Start () {
-		maxSpeed = 2.5f;
+		maxSpeed = 3.5f;
 		radiusOfSat = 1f;
 	}
 	
@@ -53,18 +54,18 @@ public class OpponentMovement : MonoBehaviour
         else {
             coolDown();
             reachedLocation = true;
-            Debug.Log("entered location");
+            //Debug.Log("entered location");
 
             if(canThrow) {
                 animator.SetTrigger("throw");
-                //StartCoroutine(launchScript.Shoot());
+                StartCoroutine(launchScript.Shoot());
                 canThrow = false;
             }
         }
 
 
 
-        Debug.Log(stop);
+        //Debug.Log(stop);
         //Debug.Log(rb.velocity);
 
 		
