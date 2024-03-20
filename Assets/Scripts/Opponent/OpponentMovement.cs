@@ -4,41 +4,78 @@ using UnityEngine;
 
 public class OpponentMovement : MonoBehaviour
 {
-    
-	[SerializeField] private Transform trans;
+    [SerializeField] private Transform trans;
+    [SerializeField] private Transform playerTransform;
 	[SerializeField] private Rigidbody rb;
 	[SerializeField] private Transform target;
 	[SerializeField] private OpponentTargetMovement targetLocation;
-    [SerializeField] Animator animator;
+    [SerializeField] private Animator animator;
 
 
 	private float maxSpeed;
 	private float radiusOfSat;
+    private bool canThrow = true;
+    private bool reachedLocation = false;
+    private float stop = 0;
 
-	void awake () {
-		maxSpeed = 5f;
-		radiusOfSat = 2f;
+	void Start () {
+		maxSpeed = 2.5f;
+		radiusOfSat = 1f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-			// Calculate vector from character to target
-			Vector3 towards = target.position - trans.position;
-			trans.rotation = Quaternion.LookRotation (towards);
+        stop -= Time.deltaTime; 
+        // Calculate vector from character to target
+        Vector3 towards = target.position - trans.position;
+        Vector3 towardsPlayer = playerTransform.position - trans.position;
 
-			// If we haven't reached the target yet
-			if (towards.magnitude > radiusOfSat) {
+        // Determine if character needs to look at player or direction they are headed
+        if(reachedLocation) {
+            trans.rotation = Quaternion.LookRotation (towardsPlayer);
+        } else {
+            trans.rotation = Quaternion.LookRotation (towards);
+        }
 
-				// Normalize vector to get just the direction
-				towards.Normalize ();
-				towards *= maxSpeed;
+        // If we haven't reached the target yet
+		if (stop < 0 && towards.magnitude > radiusOfSat) {
+            reachedLocation = false;
+		    // Normalize vector to get just the direction
+			towards.Normalize ();
+			towards *= maxSpeed;
 
-				// Move character
-				//rb.velocity = towards;
-                rb.AddForce(towards, ForceMode.Impulse);
-                towards = Vector3.zero;
-			}
+			// Move character
+			rb.velocity = towards;
+		}
+
+        // if player is at target location then stay there for 2 seconds and throw a ball
+        // if(rb.velocity < noMovement) {
+        else {
+            coolDown();
+            reachedLocation = true;
+            Debug.Log("entered location");
+
+            if(canThrow) {
+                animator.SetTrigger("throw");
+                //StartCoroutine(launchScript.Shoot());
+                canThrow = false;
+            }
+        }
+
+
+
+        Debug.Log(stop);
+        //Debug.Log(rb.velocity);
+
 		
 	}
+
+    // Player is able to move and throw after every 2 seconds
+    private void coolDown() {
+        if(stop <= 0) {
+            stop = 2;
+            canThrow = true;
+        }
+    }
 
 }
