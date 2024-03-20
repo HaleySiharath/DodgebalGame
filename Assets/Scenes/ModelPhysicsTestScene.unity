@@ -208,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44418332}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.14629065, y: 0.0040456913, z: -0.00059828506, w: -0.9892332}
-  m_LocalPosition: {x: 0.37784576, y: 7.038343, z: -14.10237}
+  m_LocalRotation: {x: -0.2048698, y: 0.0040741167, z: -0.00035659404, w: -0.97878075}
+  m_LocalPosition: {x: 0.37784576, y: 8.16, z: -14.10237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.644, y: -0.49, z: -0.061}
 --- !u!114 &64542125 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9213207495974861746, guid: 8d2a1a96e61d11348ac7281c97d3b634, type: 3}
@@ -483,6 +483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dodgeball
       objectReference: {fileID: 0}
+    - target: {fileID: 7150765472836910250, guid: 966dd60eeaddb5c4b8cb192e6b7d7812, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -670,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5616629416827955382, guid: 8d2a1a96e61d11348ac7281c97d3b634, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5616629416827955382, guid: 8d2a1a96e61d11348ac7281c97d3b634, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -812,7 +816,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff47618b99eeacf4eb22cd28fce53f3a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1127,6 +1131,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 456609814}
     - target: {fileID: 2617946719424913352, guid: e897205b21e207844a46e27bafd39ed1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743802088031251270, guid: e897205b21e207844a46e27bafd39ed1, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1601,10 +1609,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorset1
       objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 526322bcc12699c4eab229b156094a4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.86
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 526322bcc12699c4eab229b156094a4f, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1806680513116206669, guid: 526322bcc12699c4eab229b156094a4f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbb185d07d88bdc4e9a1012c364f12d7, type: 2}
     - target: {fileID: -1599826595754709761, guid: 526322bcc12699c4eab229b156094a4f, type: 3}
       propertyPath: m_Name
       value: backboard1
