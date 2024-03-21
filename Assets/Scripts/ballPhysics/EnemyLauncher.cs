@@ -23,9 +23,8 @@ public class EnemyLauncher : MonoBehaviour
         // }
     }
 
-    public IEnumerator Shoot() {
+    public void Shoot() {
         isShooting = true;
-        yield return new WaitForSeconds(seconds);
         GameObject newProj = Instantiate(projectile, barrelOut.position, barrelOut.rotation);
         isShooting = false;
     }

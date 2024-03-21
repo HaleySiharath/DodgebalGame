@@ -132,6 +132,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnThrow() {
         animator.SetTrigger("throw");
-       StartCoroutine(launchScript.Shoot());
+    }
+
+    public void PlayerThrow() {
+        //StartCoroutine(launchScript.Shoot());
+        launchScript.Shoot();
     }
 }

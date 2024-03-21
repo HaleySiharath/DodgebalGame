@@ -58,7 +58,8 @@ public class OpponentMovement : MonoBehaviour
 
             if(canThrow) {
                 animator.SetTrigger("throw");
-                StartCoroutine(launchScript.Shoot());
+
+                OpponentThrow();
                 canThrow = false;
             }
         }
@@ -77,6 +78,10 @@ public class OpponentMovement : MonoBehaviour
             stop = 2;
             canThrow = true;
         }
+    }
+
+    public void OpponentThrow() {
+        launchScript.Shoot();
     }
 
 }

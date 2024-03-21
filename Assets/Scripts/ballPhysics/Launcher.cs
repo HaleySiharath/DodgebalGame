@@ -17,8 +17,8 @@ public class Launcher : MonoBehaviour
         // }
     }
 
-    public IEnumerator Shoot() {
-        yield return new WaitForSeconds(seconds);
+    public void Shoot() {
+        //yield return new WaitForSeconds(seconds);
         GameObject newProj = Instantiate(projectile, barrelOut.position, barrelOut.rotation);
     }
 
