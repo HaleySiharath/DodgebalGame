@@ -1,0 +1,275 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.19f1 (244b723c30a6) revision 2378610'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32531 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity Projects\2022.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/wdste/OneDrive/Documents/NEW Unity Projects/DodgeballGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58625
+Successfully changed project path to: C:/Users/wdste/OneDrive/Documents/NEW Unity Projects/DodgeballGame
+C:/Users/wdste/OneDrive/Documents/NEW Unity Projects/DodgeballGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [45064] Host "[IP] 192.168.230.1 [Port] 0 [Flags] 2 [Guid] 362346905 [EditorId] 362346905 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-03OJDUVT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [45064] Host "[IP] 192.168.230.1 [Port] 0 [Flags] 2 [Guid] 362346905 [EditorId] 362346905 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-03OJDUVT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 21.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.19f1 (244b723c30a6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity Projects/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/wdste/OneDrive/Documents/NEW Unity Projects/DodgeballGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9a60)
+    Vendor:   Intel
+    VRAM:     16265 MB
+    Driver:   27.20.100.9415
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity Projects/2022.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity Projects/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity Projects/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity Projects/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010125 seconds.
+- Loaded All Assemblies, in  0.550 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 943ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (147ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (230ms)
+				TypeCache.ScanAssembly (212ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (398ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (322ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (234ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.074 seconds
+Refreshing native plugins compatible for Editor in 9.12 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.980 seconds
+Domain Reload Profiling: 2043ms
+	BeginReloadAssembly (216ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (712ms)
+		LoadAssemblies (532ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (306ms)
+			TypeCache.Refresh (270ms)
+				TypeCache.ScanAssembly (248ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (980ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (780ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (563ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Failed to load shader (instanceID 418, GUID 7cbb3655339ec401ca75ba5fe26884f4)
+Failed to load shader (instanceID 420, GUID bedd19944f451ba4d83e7ed69be98d5c)
+Failed to load shader (instanceID 416, GUID 3230fdc399f8287488325e5941a00527)
+Failed to load shader (instanceID 400, GUID 9c442dc870b456e48b615cd8add0e9ef)
+Failed to load shader (instanceID 414, GUID 603d454d711fe784cba9ce08dd22b881)
+Failed to load shader (instanceID 412, GUID 0a8f4dcd626bcd14bbbfa5a5e116b16e)
+Failed to load shader (instanceID 398, GUID 493b79ea9c9be44ed8b702014d3ac49c)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 12.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3128 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.6 KB). Loaded Objects now: 3604.
+Memory consumption went from 134.4 MB to 134.3 MB.
+Total: 5.592900 ms (FindLiveObjects: 0.340200 ms CreateObjectMapping: 0.222400 ms MarkObjects: 4.885600 ms  DeleteObjects: 0.142800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1781410.425764 seconds.
+  path: Assets/Models/dodgeballPlayingField.fbx
+  artifactKey: Guid(b57f8b2867676bd4482e6d0d662f3ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/dodgeballPlayingField.fbx using Guid(b57f8b2867676bd4482e6d0d662f3ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8f4fd9d4bf92412c8185777417ec74') in 0.323623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Import Request.
+  Time since last request: 126.001854 seconds.
+  path: Assets/Models/dodgeballPlayingFieldv3.fbx
+  artifactKey: Guid(f334cf6851bec5d4f8133b73ad00212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/dodgeballPlayingFieldv3.fbx using Guid(f334cf6851bec5d4f8133b73ad00212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec00df6c5f1211c95726220edbd787f1') in 0.249981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 427.559879 seconds.
+  path: Assets/Sprites/newDodgeballCourt.png
+  artifactKey: Guid(45fef969f2c657a4a8845468121976ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/newDodgeballCourt.png using Guid(45fef969f2c657a4a8845468121976ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec384956b609a00fc506082e560b01c') in 0.037734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 71.452326 seconds.
+  path: Assets/Materials/DodgeballCourtTexture
+  artifactKey: Guid(c2362da040bfa9e499efc166392f9d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourtTexture using Guid(c2362da040bfa9e499efc166392f9d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd111003e83ceb0e09e31ff7248ae4afa') in 0.000817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.693198 seconds.
+  path: Assets/Materials/DodgeballCourt/Door.mat
+  artifactKey: Guid(80ef1e328ba683645b159c97e3fa9265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/Door.mat using Guid(80ef1e328ba683645b159c97e3fa9265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc689c7b12a57cd6f9abdd472a45a65') in 0.027354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Materials/DodgeballCourt/Wall.mat
+  artifactKey: Guid(ed4c579c09b032448a029a66279bee24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/Wall.mat using Guid(ed4c579c09b032448a029a66279bee24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb65d87ff38e60a3e18eee719718ac92') in 0.031930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Materials/DodgeballCourt/Material.mat
+  artifactKey: Guid(f7603f4545c160d47b4c685dba2f0abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/Material.mat using Guid(f7603f4545c160d47b4c685dba2f0abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a00b7a5ea1b7e7a93860e3b96bbfcc') in 0.028686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 400.437239 seconds.
+  path: Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg
+  artifactKey: Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg using Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665acdef9023881f71ae8df3a464f091') in 0.031752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 214.105186 seconds.
+  path: Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg
+  artifactKey: Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg using Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e915a8cce11bea5b0a4529b1a42c4df7') in 0.082508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.022948 seconds.
+  path: Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg
+  artifactKey: Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/newDodgeballCourt.jpg using Guid(035f8851914fd5d468c09eca50c25f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b214a851e5d3a2f603ebc2eabacafcac') in 0.066073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 517.688094 seconds.
+  path: Assets/Materials/DodgeballCourt/Field.mat
+  artifactKey: Guid(dc904268c5c9aa542b9ab9fe39c95f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/Field.mat using Guid(dc904268c5c9aa542b9ab9fe39c95f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e6b6d1e833b396113ac4981553c243') in 0.039730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
