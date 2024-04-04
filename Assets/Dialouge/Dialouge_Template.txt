@@ -1,0 +1,11 @@
+Initiator = 0 // 1=player  0=NPC
+// Speaker ; Index ab a=round b=option ; score ; text ; continue/break
+// For NPCs lower options are more negative.
+NPC;00;0;"Well that was a game.";Continue
+PC;10;0;"Yep.";Break
+PC;11;-2;"It would have been if you were any good."; Continue
+PC;12;1;"Good play out there.";Continue
+NPC;20;0;"Yea well screw you too.";Break
+NPC;21;0;"You were not so bad yourself";Continue
+PC;30;1;"Thanks";Break
+PC;31;-4;"That was sarcasm you idiot, you suck.";Break
