@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpponentMovement : MonoBehaviour
 {
-        [SerializeField] private Transform trans;
+    [SerializeField] private Transform trans;
     [SerializeField] private Transform playerTransform;
 	[SerializeField] private Rigidbody rb;
 	[SerializeField] private Transform target;
@@ -27,6 +27,7 @@ public class OpponentMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
         stop -= Time.deltaTime; 
+
         // Calculate vector from character to target
         Vector3 towards = target.position - trans.position;
         Vector3 towardsPlayer = playerTransform.position - trans.position;
@@ -48,18 +49,14 @@ public class OpponentMovement : MonoBehaviour
 			// Move character
 			rb.velocity = towards;
 		}
-
         // if player is at target location then stay there for 2 seconds and throw a ball
         // if(rb.velocity < noMovement) {
         else {
             coolDown();
             reachedLocation = true;
-            //Debug.Log("entered location");
 
             if(canThrow) {
                 animator.SetTrigger("throw");
-
-                OpponentThrow();
                 canThrow = false;
             }
         }
