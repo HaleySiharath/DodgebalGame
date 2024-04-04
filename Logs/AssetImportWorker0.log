@@ -273,3 +273,43 @@ Received Import Request.
 Start importing Assets/Materials/DodgeballCourt/Field.mat using Guid(dc904268c5c9aa542b9ab9fe39c95f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e6b6d1e833b396113ac4981553c243') in 0.039730 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 263.881645 seconds.
+  path: Assets/Materials/DodgeballCourt/newDodgeballCourt 1.jpg
+  artifactKey: Guid(13f5d16f66d37ba45b7b81c53f66f1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/newDodgeballCourt 1.jpg using Guid(13f5d16f66d37ba45b7b81c53f66f1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58a8074f3e7460048828d26558cc3c7') in 0.023299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.876317 seconds.
+  path: Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg
+  artifactKey: Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg using Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc29840b9cf3617ba4d3f1254b34d9b5') in 0.018500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 37.679937 seconds.
+  path: Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg
+  artifactKey: Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg using Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e9904573cc283f3ece5b4cb6e4b284') in 0.029141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 200.317410 seconds.
+  path: Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg
+  artifactKey: Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/painted-cmu-block-stretcher-7004-in-architextures (1).jpg using Guid(c1de5895d322893449aca10d67443166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fe0ec5821735a56a0b6eec83f0dadd') in 0.029478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 47.098853 seconds.
+  path: Assets/Materials/DodgeballCourt/Wall.mat
+  artifactKey: Guid(ed4c579c09b032448a029a66279bee24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DodgeballCourt/Wall.mat using Guid(ed4c579c09b032448a029a66279bee24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3295f9f8fadab6d519d6af78b540101') in 0.019814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
