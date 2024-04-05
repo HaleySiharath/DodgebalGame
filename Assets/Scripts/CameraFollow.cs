@@ -15,6 +15,10 @@ public class CameraFollow : MonoBehaviour
         //Change camera behavior for different scenes
 
         transform.position = player.position + cameraOffset;
+        
+        //revolve around player behind their back
+        //if something cuts distance from camera to player, jump to wall position
+        //Try Quanternion.Euler Later
 
     }
 }
