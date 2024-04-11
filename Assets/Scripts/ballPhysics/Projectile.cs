@@ -24,6 +24,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
+        Debug.Log("Thrown by player " + thrownByPlayer);
     }
 
     // Update is called once per frame
@@ -45,6 +46,11 @@ public class Projectile : MonoBehaviour
         var direction = Vector3.Reflect(lastVelocity.normalized, coll.contacts[0].normal);
 
         rb.velocity = direction * Mathf.Max(speed / 1.05f, 0f); //Set the new velocity of the ball
+    
+        if(thrownByPlayer) {
+            ScoringManager.Instance.addScore(1);
+            Debug.Log(ScoringManager.Instance.getScore() + " Score");
+        }
     }
 
 }

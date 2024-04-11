@@ -20,6 +20,7 @@ public class Launcher : MonoBehaviour
     public void Shoot() {
         //yield return new WaitForSeconds(seconds);
         GameObject newProj = Instantiate(projectile, barrelOut.position, barrelOut.rotation);
+        newProj.GetComponent<Projectile>().thrownByPlayer = true;
     }
 
 

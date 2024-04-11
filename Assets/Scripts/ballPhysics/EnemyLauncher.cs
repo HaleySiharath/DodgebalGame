@@ -15,7 +15,7 @@ public class EnemyLauncher : MonoBehaviour
 
     public void Shoot() {
         isShooting = true;
-        GameObject newProj = Instantiate(projectile, barrelOut.position, barrelOut.rotation);
-        isShooting = false;
+        // GameObject newProj = Instantiate(projectile, barrelOut.position, barrelOut.rotation);
+        // isShooting = false;
     }
 }
