@@ -321,7 +321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97694975}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.068995446, y: 0.0012202365, z: -0.00008439193, w: 0.99761623}
+  m_LocalRotation: {x: 0.054779995, y: 0.6065151, z: -0.04194677, w: 0.7920727}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -676,8 +676,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581893746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.062097933, y: 0.001220789, z: -0.00007595513, w: 0.9980693}
-  m_LocalPosition: {x: 0.9193986, y: 4.0423136, z: -4.333633}
+  m_LocalRotation: {x: 0.06209761, y: -0.0034800777, z: 0.0002165237, w: 0.998064}
+  m_LocalPosition: {x: 0.96022093, y: 4.0423136, z: -4.3335404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1050,7 +1050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956805449}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03271155, y: 0.0012224967, z: -0.000040011204, w: 0.9994641}
+  m_LocalRotation: {x: 0.025971835, y: 0.6076385, z: -0.019887453, w: 0.7935398}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1141,13 +1141,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1784327038}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 761087640}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1613,8 +1613,8 @@ MonoBehaviour:
     Value: 0.81
     m_SpeedMode: 0
     m_MaxSpeed: 0
-    m_AccelTime: 0.2
-    m_DecelTime: 0.1
+    m_AccelTime: 0
+    m_DecelTime: 0
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 0
@@ -1635,13 +1635,13 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: 0
-    m_SpeedMode: 0
-    m_MaxSpeed: 0
+    m_SpeedMode: 1
+    m_MaxSpeed: 10
     m_AccelTime: 0.05
     m_DecelTime: 0.05
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -1683,8 +1683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441828171}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9193986, y: 4.0423136, z: -4.333633}
+  m_LocalRotation: {x: -0, y: -0.6107285, z: -0, w: 0.79184}
+  m_LocalPosition: {x: 0.96022093, y: 4.0423136, z: -4.3335404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1692,7 +1692,7 @@ Transform:
   - {fileID: 1527030952}
   - {fileID: 956805451}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -75.284, z: 0}
 --- !u!1 &1527030950
 GameObject:
   m_ObjectHideFlags: 3
@@ -1764,7 +1764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527030950}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.050837904, y: 0.0012215675, z: -0.000062182386, w: 0.99870616}
+  m_LocalRotation: {x: 0.040363528, y: 0.6071777, z: -0.030907625, w: 0.79293805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1854,7 +1854,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1554141926}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 761087640}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Home
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1554141926
 MonoBehaviour:
   m_ObjectHideFlags: 0
