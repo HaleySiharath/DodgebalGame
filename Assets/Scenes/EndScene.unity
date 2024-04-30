@@ -493,6 +493,7 @@ MonoBehaviour:
   - Test Sentence 4
   - Test Sentence 5
   typingSpeed: 0.02
+  continueButton: {fileID: 983584367}
 --- !u!4 &384354312
 Transform:
   m_ObjectHideFlags: 0
@@ -772,7 +773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &983584368
 RectTransform:
   m_ObjectHideFlags: 0
