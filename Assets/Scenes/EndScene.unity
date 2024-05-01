@@ -449,12 +449,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
       propertyPath: m_Name
-      value: AI_Opponenet_Women (1)
+      value: Jenny
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 557956754}
   m_SourcePrefab: {fileID: 100100000, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
 --- !u!1 &384354310
 GameObject:
@@ -487,11 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1949840476}
   sentences:
-  - Test Sentence 1
-  - Test Sentence 2
-  - Test Sentence 3
-  - Test Sentence 4
-  - Test Sentence 5
+  - Blah
   typingSpeed: 0.02
   continueButton: {fileID: 983584367}
 --- !u!4 &384354312
@@ -677,6 +676,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: f334cf6851bec5d4f8133b73ad00212a, type: 3}
+--- !u!1 &557956753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
+  m_PrefabInstance: {fileID: 365192755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &557956754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557956753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  score: 0
 --- !u!1001 &630829433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -743,12 +761,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
       propertyPath: m_Name
-      value: AI_Opponenet_Women
+      value: Martha
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1324307398}
   m_SourcePrefab: {fileID: 100100000, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
 --- !u!4 &843600561 stripped
 Transform:
@@ -1008,12 +1029,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
       propertyPath: m_Name
-      value: AI_Opponent (1)
+      value: Tyson
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1452682435}
   m_SourcePrefab: {fileID: 100100000, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
 --- !u!1 &1198885037
 GameObject:
@@ -1137,6 +1161,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1324307397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
+  m_PrefabInstance: {fileID: 630829433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1324307398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324307397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  score: 0
+--- !u!1 &1452682434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
+  m_PrefabInstance: {fileID: 1196408137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1452682435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452682434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  score: 0
 --- !u!1 &1476485258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,13 +1421,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
       propertyPath: m_Name
-      value: AI_Opponent
+      value: Hunter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1921546592}
   m_SourcePrefab: {fileID: 100100000, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
+--- !u!1 &1921546591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
+  m_PrefabInstance: {fileID: 1768825307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1921546592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921546591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  score: 0
 --- !u!1001 &1929376290
 PrefabInstance:
   m_ObjectHideFlags: 0

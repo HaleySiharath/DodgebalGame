@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EndDialogue : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
-    public string[] sentences;
-    private int index;
+    [SerializeField] private TextMeshProUGUI textDisplay; //Display Box
+    private string filePath;
+    public string[] sentences; //Separated Lines
+    private int index; //Line Index
     public float typingSpeed;
 
     public GameObject continueButton;
 
     void Start() {
         StartCoroutine(Type());
+
+        filePath = Application.dataPath + "/DodgeballEndSceneText.txt";
+        textDisplay.text = GetLineAtIndex(index);
     }
 
     void Update() {
@@ -29,7 +35,17 @@ public class EndDialogue : MonoBehaviour
         }
     }
 
-    public void NextSentence() {
+    private string GetLineAtIndex(int lineIndex) {
+        sentences = File.ReadAllLines(filePath);
+
+        if (lineIndex < sentences.Length) {
+            return sentences[lineIndex];
+        } else {
+            return "End of Log";
+        }
+    }
+
+    public void NextSentence() { //Might Have to Edit into different methods
         continueButton.SetActive(false);
 
         if(index < sentences.Length - 1) {
@@ -39,6 +55,7 @@ public class EndDialogue : MonoBehaviour
         } else {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            SceneManager.LoadScene(0);
         }
     }
 }
