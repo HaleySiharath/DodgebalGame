@@ -18,7 +18,7 @@ public class EndDialogue : MonoBehaviour
     void Start() {
         StartCoroutine(Type());
 
-        filePath = Application.dataPath + "/DodgeballEndSceneText.txt";
+        filePath = Application.dataPath + "/Dialogue/DodgeballEndSceneText.txt";
         textDisplay.text = GetLineAtIndex(index);
     }
 
@@ -52,9 +52,13 @@ public class EndDialogue : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            //Deactivating Game Objects
+            if (textDisplay.text.Contains("points")) {
+                //Deactivate player named in sentence
+            }
         } else {
-            textDisplay.text = "";
             continueButton.SetActive(false);
+            textDisplay.text = "";
             SceneManager.LoadScene(0);
         }
     }
