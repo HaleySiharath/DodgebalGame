@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class EndStats : MonoBehaviour
 {
-    [SerializeField] private string name;
-    [SerializeField] private int score;
+    [SerializeField] string contestantName;
+    [SerializeField] public int score;
     // Start is called before the first frame update
 
     void Start()
     {
-        name = gameObject.name;
+        contestantName = gameObject.name;
 
-        if (name == "Player") {
+        if (gameObject.tag == "Player") {
             score = ScoringManager.Instance.getScore();
         } else {
-            score = (int) Random.Range(10.0f, 21.0f);
+           //score = (int) Random.Range(10.0f, 21.0f);
         }
     }
 
     public string getName() {
-        return name;
+        return contestantName;
     }
 
     public int getScore() {

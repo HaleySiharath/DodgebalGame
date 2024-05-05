@@ -12,6 +12,7 @@ public class Projectile : MonoBehaviour
     Vector3 lastVelocity; // For obtaining the last calculated velocity in Update()
 
     public bool thrownByPlayer = false;
+    private bool thrown = false;
 
     //[SerializeField] private AudioSource source;
     [SerializeField] private AudioClip clip;
@@ -24,7 +25,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
-        Debug.Log("Thrown by player " + thrownByPlayer);
+        //Debug.Log("Thrown by player " + thrownByPlayer);
     }
 
     // Update is called once per frame
@@ -47,10 +48,33 @@ public class Projectile : MonoBehaviour
 
         rb.velocity = direction * Mathf.Max(speed / 1.05f, 0f); //Set the new velocity of the ball
     
-        if(thrownByPlayer) {
-            ScoringManager.Instance.addScore(1);
-            Debug.Log(ScoringManager.Instance.getScore() + " Score");
+        if(thrownByPlayer) {	
+            if(!thrown) {
+                if(coll.gameObject.tag == "Opponent") {
+                    ScoringManager.Instance.addScore(3);
+                    Debug.Log(ScoringManager.Instance.getScore() + " Hit Opponent");
+                } else {
+                    ScoringManager.Instance.addScore(-2);
+                    Debug.Log(ScoringManager.Instance.getScore() + " Missed Opponent");
+                }
+
+            }
+
+        } else if (!thrownByPlayer) {
+            if(!thrown) {
+                if(coll.gameObject.tag == "Player") {
+                    ScoringManager.Instance.addScore(-3);
+                    Debug.Log(ScoringManager.Instance.getScore() + " Player Hit");
+                } else {
+                    ScoringManager.Instance.addScore(1);
+                    Debug.Log(ScoringManager.Instance.getScore() + " Player Dodged");
+                }
+            }
         }
+
+        thrown = true;
+
+
     }
 
 }

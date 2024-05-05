@@ -30,7 +30,7 @@ public class TimerScript : MonoBehaviour
                 timeStarted = false;
                 currentTime = 0;
 
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(2);
             }
 
             minutes = Mathf.FloorToInt(currentTime / 60F);

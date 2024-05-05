@@ -12,14 +12,17 @@ public class EndDialogue : MonoBehaviour
     public string[] sentences; //Separated Lines
     private int index; //Line Index
     public float typingSpeed;
-
+    
     public GameObject continueButton;
 
-    void Start() {
-        StartCoroutine(Type());
+    public IEnumerator Start() {
 
-        filePath = Application.dataPath + "/Dialogue/DodgeballEndSceneText.txt";
-        textDisplay.text = GetLineAtIndex(index);
+        StartCoroutine(Type());
+        filePath = Application.dataPath + "/Dialogue/DodgeballEndScene.txt";
+
+
+        GetLineAtIndex(index);
+        yield return null;
     }
 
     void Update() {

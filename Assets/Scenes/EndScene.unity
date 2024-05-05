@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -530,12 +530,9 @@ MonoBehaviour:
   npc2: {fileID: 557956753}
   npc3: {fileID: 1921546591}
   npc4: {fileID: 1452682434}
-  ranking:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  contestants: []
+  contestantsSorted: []
+  endDialogue: {fileID: 384354311}
 --- !u!1001 &406172052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -606,12 +603,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5761253869059679368, guid: 53ba6a30e07d1d14385cb10d44253b57, type: 3}
       propertyPath: m_TagString
-      value: Contestant
+      value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4485739045944797310, guid: 53ba6a30e07d1d14385cb10d44253b57, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5761253869059679368, guid: 53ba6a30e07d1d14385cb10d44253b57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 538637124}
   m_SourcePrefab: {fileID: 100100000, guid: 53ba6a30e07d1d14385cb10d44253b57, type: 3}
 --- !u!4 &429742421 stripped
 Transform:
@@ -713,6 +714,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5761253869059679368, guid: 53ba6a30e07d1d14385cb10d44253b57, type: 3}
   m_PrefabInstance: {fileID: 406172052}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &538637124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538637116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contestantName: you
+  score: 0
 --- !u!1 &557956753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7631204225519714685, guid: 45e00baf22c050b41bfd63a6dd4243de, type: 3}
@@ -730,8 +745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  score: 0
+  contestantName: Jenny
+  score: 15
 --- !u!1001 &630829433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1223,8 +1238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  score: 0
+  contestantName: Martha
+  score: 30
 --- !u!1 &1452682434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1527311045753522153, guid: f6f4d281c6e968b4cb1598869afdee84, type: 3}
@@ -1242,8 +1257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  score: 0
+  contestantName: Tyson
+  score: 6
 --- !u!1 &1476485258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,8 +1512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ac29f0236c8784384f2e70f2063769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  score: 0
+  contestantName: Hunter
+  score: -4
 --- !u!1001 &1929376290
 PrefabInstance:
   m_ObjectHideFlags: 0

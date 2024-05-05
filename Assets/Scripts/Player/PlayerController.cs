@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -136,6 +137,8 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerThrow() {
         //StartCoroutine(launchScript.Shoot());
-        launchScript.Shoot();
+        if(SceneManager.GetActiveScene ().name == "DodgeballTestScene") {
+            launchScript.Shoot();
+        }
     }
 }

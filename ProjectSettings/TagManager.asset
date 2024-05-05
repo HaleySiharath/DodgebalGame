@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Contestant
+  - Opponent
   layers:
   - Default
   - TransparentFX
