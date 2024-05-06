@@ -2,6 +2,6 @@
 "First, Martha with 30 points."
 "Second, Jenny with 15 points."
 "Third, Tyson with 6 points."
-"Fourth, you with -3 points."
+"Fourth, you with 0 points."
 "... and Last, Hunter with -4 points."
 "Thats it, see yall next week for gym class"
